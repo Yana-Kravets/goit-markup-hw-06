@@ -488,6 +488,8 @@ img {
 .filter-btn {
     padding: 6px 22px;
 
+    border: none;
+    cursor: pointer;
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
@@ -716,15 +718,12 @@ img {
 .footer-form-desc {
     margin-top: 0;
     margin-bottom: 20px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    line-height: 1.1;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--main-light);
 }
 
 .footer-form-wrapper {
@@ -742,9 +741,8 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background: #2F303A;
     background-color: var(--secondary-background);
-    color: #FFFFFF;
+    color: var(--main-light);
     transition: border-color var(--transition-dur-and-func);
 }
 
@@ -849,14 +847,10 @@ img {
     margin-bottom: 10px;
 }
 
-.modal-form-field:last-child {
-    margin-bottom: 20px;
-}
-
 .modal-form-input-desc {
     display: block;
     margin-bottom: 4px;
-    font-weight: 400;
+
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.01em;
@@ -921,16 +915,13 @@ img {
 .modal-form-check-desk {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+    justify-content: center;
+    margin-bottom: 30px;
+
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 
-    letter-spacing: 0.03em;
-
-    color: #757575;
+    color: var(--secondary-color);
 }
 
 .modal-form-check-desk::before {
@@ -954,12 +945,12 @@ img {
 }
 
 .modal-form-check:focus + .modal-form-check-desk::before {
-    outline: 2px solid rgba(0, 0, 0, 0.06) 
+    outline: 2px solid rgba(0, 0, 0, 0.06); 
 }
 
 .modal-form-link {
+    text-decoration: underline;
     color: var(--accent-color);
-    /* text-decoration: underline; */
 }
 
 .modal-form-btn {

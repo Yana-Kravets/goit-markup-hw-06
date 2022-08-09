@@ -430,9 +430,9 @@
                     required
                     minlength="2"
                     placeholder="E-mail">
-                    <button class="hero-btn footer-form-btn">Подписаться
+                    <button type="submit" class="hero-btn footer-form-btn">Подписаться
                         <svg class="footer-form-icon" width="24px" height="24px">
-                            <use href="./images/icon-check.svg#icon-telegram"></use>
+                            <use href="./images/icons.svg#icon-form"></use>
                         </svg>
                     </button>
                 </div>
@@ -441,8 +441,6 @@
         </div>
 
     </footer> 
-
-<!-- is-hidden -->
 
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
@@ -457,9 +455,7 @@
             <form class="modal-form" autocomplete="off">
                 <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <label class="modal-form-field">
-                    <span class="modal-form-input-desc">
-                        Имя
-                    </span>
+                    <span class="modal-form-input-desc">Имя</span>
                     <span class="modal-form-input-wrapper">
                         <input 
                         type="text" 
@@ -475,10 +471,7 @@
                 </label>
 
                 <label class="modal-form-field">
-
-                    <span class="modal-form-input-desc">
-                        Телефон
-                    </span>
+                    <span class="modal-form-input-desc">Телефон</span>
                     <span class="modal-form-input-wrapper">
                         <input 
                         type="tel" 
@@ -494,10 +487,7 @@
                 </label>
 
                 <label class="modal-form-field">
-
-                    <span class="modal-form-input-desc">
-                        Почта
-                    </span>
+                    <span class="modal-form-input-desc">Почта</span>
                     <span class="modal-form-input-wrapper">
                         <input 
                         type="email" 
@@ -511,26 +501,14 @@
                 </label>
 
                 <label class="modal-form-field">
-
-                    <span class="modal-form-input-desc">
-                        Комментарий
-                    </span>
-
-                    <textarea 
-                    name="user-message" 
-                    class="modal-form-message"
-                    placeholder="Введите текст"
-                    ></textarea>
-
+                    <span class="modal-form-input-desc">Комментарий</span>
+                    <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
                 </label>
 
                 <input type="checkbox" id="user-policy" class="modal-form-check visually-hidden" name="user-policy">
-                
                 <label for="user-policy" class="modal-form-check-desk">Соглашаюсь с рассылкой и принимаю&nbsp;<a class="modal-form-link" href="#">Условия договора</a></label>
                 <button type="submit" class="hero-btn modal-form-btn">Отправить</button>
             </form>
-
-            <!-- <button type="submit" class="hero-btn modal-form-btn">Отправить</button> -->
         </div>
     </div> 
 
